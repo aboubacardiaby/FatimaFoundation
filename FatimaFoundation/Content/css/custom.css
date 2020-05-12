@@ -3523,5 +3523,16 @@ background-image: -webkit-gradient(
 .footer-bottom p a {
     color: #ffffff;
 }
+.profile-org-name {
+    font-family: Oswald;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 52px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
 /*Footer End*/
 

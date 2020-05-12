@@ -1,0 +1,82 @@
+﻿@model FatimaFoundation.Models.IndexVm
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<style>
+
+</style>
+
+<!-- Custom styles for this template -->
+@*<link href="~/Conten/public/css/style.css" rel="stylesheet">
+<link href="~/Content/bootstrap.css" rel="stylesheet" />*@
+<link href="~/Content/Site.css" rel="stylesheet" />
+<!-- begin:content -->
+<div class="page-content">
+    <div class="container">
+        <div class="row confirm" style="font: 13px/1.7em 'Open Sans', arial, sans-serif;">
+            <div class="col-md-12" style="position: relative;
+                                                    min-height: 1px;
+                                                    padding-right: 15px;
+                                                    padding-left: 15px; margin-left:300px">
+                @using (Html.BeginForm("Index", "Payment", FormMethod.Post, new { @class = "form-horizontal" }))
+                {
+                    <h3 class="text-center" style=" font-size: 22px;
+                                                    line-height: 26px;
+                                                    color: #444444;
+                                                    text-transform: uppercase;
+                                                    font-weight: 600;
+                                                ">
+                        Donation for @Model.DonationDate.ToString("dddd, dd MMMM yyyy")
+                    </h3>
+                    <hr>
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <div class="col-sm-4">
+                            @Html.TextBoxFor(x => x.FirstName, new { @class = "form-control" })
+                            <div class="help-block">
+                                @Html.ValidationMessageFor(x => x.FirstName)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <div class="col-sm-4">
+                            @Html.TextBoxFor(x => x.LastName, new { @class = "form-control" })
+                            <div class="help-block">
+                                @Html.ValidationMessageFor(x => x.LastName)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <div class="col-sm-6">
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                            <div class="help-block">
+                                @Html.ValidationMessageFor(x => x.Email)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Amount to Donate</label>
+                        <div class="col-sm-6">
+                            @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+                            <div class="help-block">
+                                @Html.ValidationMessageFor(x => x.Price)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-10">
+                            <button type="submit" class="btn btn-warning">Donate with PayPal</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end:content -->
