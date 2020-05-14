@@ -256,6 +256,7 @@
     <Content Include="Content\font\fontawesome-webfont.svg" />
     <Content Include="Content\images\Child_education.jfif" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\paypaldonate.gif" />
     <Content Include="Content\images\Senegal-Banner-Photo.jpg" />
     <Content Include="Content\img\220_1_hover.png" />
     <Content Include="Content\img\220_2_hover.png" />
@@ -541,7 +542,9 @@
     <Content Include="Content\public\css\bootstrap-theme.css.map" />
     <Content Include="Content\public\css\bootstrap.css.map" />
     <Content Include="Content\public\css\wizard.less" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\fatimatafoundation.org - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -593,6 +596,9 @@
     <Content Include="Views\Payment\ThankYou.cshtml" />
     <Content Include="Views\WebExperienceProfiles\Index.cshtml" />
     <Content Include="Views\Sales\Index.cshtml" />
+    <Content Include="Views\Home\whatwedo.cshtml" />
+    <Content Include="Views\Home\howcanyouhelp.cshtml" />
+    <Content Include="Views\Home\wherewework.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

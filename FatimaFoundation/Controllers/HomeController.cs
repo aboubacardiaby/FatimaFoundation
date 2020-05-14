@@ -20,11 +20,24 @@ namespace FatimaFoundation.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult wherewework()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "where we work";
 
             return View();
         }
+        public ActionResult howcanyouhelp()
+        {
+            ViewBag.Message = "where we work";
+
+            return View();
+        }
+        public ActionResult whatwedo()
+        {
+            ViewBag.Message = "where we work";
+
+            return View();
+        }
+
     }
 }
